@@ -4,9 +4,11 @@ const myContainer = document.getElementById("container");
 function createBox() {
     const mioElement = document.createElement("div");
     mioElement.classList.add("box");
+    mioElement.setAttribute("onclick","changeColor();");
 
     return mioElement;
 }
+
 
 for (let i = 0; i < 100; i++) {
 
@@ -22,10 +24,39 @@ for (let i = 0; i < 100; i++) {
 
     let nuovoNum = boxes[i];
 
-    const element = `<div>${i + 1}</div>`;
+    const element = `<div class="num">${i + 1}</div>`;
     nuovoNum.innerHTML += element;
+    boxes[i].onclick = function(e) {
+        e.target.style.backgroundColor= "blue";
+    }
 
 }
+
+
+
+
+/* function changeColor() {
+    let mioElement = 
+    mioElement.classList.add("bk-blue");
+}; */
+
+/* const mioElement = document.getElementsByClassName("box");
+
+mioElement.setAttribute('onclick', 'changeColor()');
+
+function changeColor() {
+    mioElement.classList.add("bk-blue");
+}; */
+
+
+/* let casella = document.getElementsByClassName('box');
+
+
+
+casella.onclick = function() {
+    casellat.classList.add("bk-blue");
+};
+ */
 
 
 

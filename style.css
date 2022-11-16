@@ -19,3 +19,11 @@ body {
     height: calc(100% / 10 - 2px);
     border: 1px solid black;
 }
+
+.num {
+    z-index: -1;
+}
+
+.bk-blue {
+    background-color: blue;
+}
