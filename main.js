@@ -27,9 +27,9 @@ function myFunction() {
 
         const element = `<div class="num">${i + 1}</div>`;
         nuovoNum.innerHTML += element;
-        let add = boxes[i];
-        add.onclick = function() {
-            add.classList.add("bk-blue");
+        
+        nuovoNum.onclick = function() {
+            nuovoNum.classList.add("bk-blue");
             if (!clicked.includes(i + 1)) {
                 clicked.push(i + 1);
                 console.log(clicked);
